@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.warpper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clear-fix:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.col{
+    float: left;
+}
+.col-50{
+    width: 50%;
+}
+.header-left span {
+    color: white;
+    display: block;
+    padding: 7px 7px;
+}
+.header-right ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: table;
+}
+.header-right li{
+    display: table-cell;
+}
+.header-right li a{
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 12px;
+}
+.header-right a:hover{
+    background: white;
+    color: #d74b33;
+}
+.header-top{
+    background: #d74b33;
+}
+.main-header{
+    background: #ebeaea;
+}
+.main-header img{
+    padding: 15px;
+}
+.search{
+    position: relative;
+    text-align: right;
+    right: 100px;
+
+}
+.search input{
+    width: 250px;
+    margin-top: 30px;
+    height: 25px;
+    border: 1px solid black;
+}
+.search button{
+    margin-top: 30px;
+    height: 25px;
+    width: 50px;
+    font-size: 15px;
+    background: black;
+    color: white;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+.menu{
+    background: white;
+    max-width: 100%;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: table;
+}
+.menu li{
+    display: table-cell;
+}
+.menu li a{
+    padding: 10px 20px;
+    color: black;
+
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.menu a:hover{
+    background: #d74b33;
+    color: white;
+}
+
+.page-main a{
+    background: #d74b33;
+    color: white;
+}
+/*
+CSS content
+ */
+.content{
+    padding-top: 20px;
+}
+/*
+CSS menu doc
+ */
+.menu-doc{
+    background: #ebeaea;
+    max-width: 100%;
+}
+.menu-doc ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    width: 250px;
+}
+.menu-doc li{
+    width: auto;
+    height: 40px;
+    border-bottom: 1px solid black;
+    padding: 0 1em;
+}
+.menu-doc li a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.menu-doc li:hover{
+    background: #d74b33;
+}
+.menu-doc a:hover{
+    color: white;
+}
+.menu-doc ul li{
+    position: relative;
+}
+.menu-doc .sub-menu{
+    position: absolute;
+    left: 250px;
+    top: 0;
+    display: none;
+}
+.menu-doc li:hover .sub-menu{
+display: block;
+}
+.col-30{
+    width: 30%;
+}
+.col-70{
+    width: 70%;
+}
+.banner img{
+    width: 100%;
+    height: 400px;
+}
