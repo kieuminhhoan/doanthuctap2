@@ -116,48 +116,123 @@ CSS content
     padding-top: 20px;
 }
 /*
+CSS banner
+ */
+* {
+    box-sizing:border-box
+}
+h2 {
+    text-align: center;
+}
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    margin: auto;
+    padding-top: 10px;
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+/* Định dạng nội dung Caption */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*
 CSS menu doc
  */
-.menu-doc{
-    background: #ebeaea;
-    max-width: 100%;
-}
-.menu-doc ul{
-    margin: 0;
+.menu-doc ul {
+    background: #d74b33;
+    width: 250px;
     padding: 0;
     list-style-type: none;
-    text-align: left;
-    width: 250px;
+
 }
 .menu-doc li{
     width: auto;
     height: 40px;
-    border-bottom: 1px solid black;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
     padding: 0 1em;
 }
 .menu-doc li a{
-    padding: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bold;
     display: block;
 }
 .menu-doc li:hover{
-    background: #d74b33;
+    background: #CDE2CD;
 }
-.menu-doc a:hover{
-    color: white;
-}
-.menu-doc ul li{
+.menu-doc ul li {
     position: relative;
 }
-.menu-doc .sub-menu{
+.menu-doc .sub-menu {
+    position: absolute;
+    left: 250px;
+    top: 0;
+}
+.menu-doc .sub-menu {
     position: absolute;
     left: 250px;
     top: 0;
     display: none;
 }
-.menu-doc li:hover .sub-menu{
-display: block;
+.menu-doc li:hover .sub-menu {
+    display: block;
+}
+.menu-doc span{
+    background: #d74b33;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #e8e8e8;
+    padding: 0 1em;
+    color: white;
 }
 .col-30{
     width: 30%;
@@ -165,7 +240,7 @@ display: block;
 .col-70{
     width: 70%;
 }
-.banner img{
-    width: 100%;
-    height: 400px;
+.product ul img{
+    width: 50px;
+    height: 100px;
 }
